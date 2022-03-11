@@ -1,0 +1,38 @@
+.card {
+  background-color: white;
+  text-align: center;
+  padding: 16px;
+  border-radius:  6px;
+  box-shadow: 1px 1px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  color:  black;
+}
+
+.card p {
+  color: black;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  margin: 50px;
+}
+
+.card img {
+  width: 80%;
+}
+
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
